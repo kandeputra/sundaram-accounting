@@ -14,6 +14,7 @@ Aplikasi akuntansi untuk **PT. Bali Sundaram Travel** (tour & travel), dibuat da
 
 ```
 app/index.html              aplikasi (satu file HTML)
+data/                       backup data keuangan (impor lewat Pengaturan)
 server/server.js            server Node.js (Express)
 server/db.js                koneksi & pembuatan tabel otomatis
 server/schema.sql           skema tabel (referensi)
@@ -44,7 +45,7 @@ Setiap booking tour mengikuti format Budget Report (pemasukan paket, transport, 
 
 Laba Rugi disusun bertingkat: Pendapatan usaha − HPP = Laba kotor − Beban operasional = Laba operasional + Pendapatan lain = Laba bersih. Neraca dipisah lancar / tidak lancar dan jangka pendek / panjang.
 
-Data lama dipindahkan lewat **Pengaturan › Impor backup JSON** (masuk sebagai admin). File backup berisi data keuangan, jadi jangan disimpan di repo ini karena repo publik.
+Data Januari 2026 hasil koreksi Budget Report tersimpan di `data/backup-sundaram-januari-2026.json`: 63 booking tour, 167 transaksi kantor, dan 57 akun. Impor lewat **Pengaturan › Impor backup JSON** (masuk sebagai admin). Repo ini harus tetap private karena berisi data keuangan.
 
 ---
 

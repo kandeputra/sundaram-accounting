@@ -1,6 +1,3 @@
 node_modules/
 server/.env
 *.log
-data/
-*.json.bak
-backup-*.json
